@@ -8,6 +8,35 @@ body{
 
 #particles-js{
     height: 100%;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,1);
     background-blend-mode: darken;
 }
+
+#particles-js h1{
+    text-align: center;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+    0%{
+        background-position-x: -500%;
+    }
+    100%{
+        background-position-x: 500%;
+    }
+    }
